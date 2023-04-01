@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<groups>
+<run>
+<include name="smoke"></include>
+</run>
+</groups>
+
+
+<parameter name="username" value="standard_user"></parameter>
+<parameter name="password" value="secret_sauce"></parameter>
+
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+  <class name="org.swaglabs.SwagLabs">
+  </class>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="FirefoxTest">
+  <parameter name="browser" value="firefox"></parameter>
+  <classes>
+  <class name="org.swaglabs.SwagLabs">
+  </class>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="EdgeTest">
+  <parameter name="browser" value="edge"></parameter>
+  <classes>
+  <class name="org.swaglabs.SwagLabs">
+  </class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
