@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="144.29">
+<testcase classname="BookCart Site Launched" name="User launched the Bookcart Website using Url" time="13.199">
+<system-out><![CDATA[Given User entered the url "https://bookcart.azurewebsites.net/login" in browser.passed
+When If you new user Click on the Register button on login..................passed
+Then It navigated to User Register page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookCart Site Launched" name="User enter details for Register in site" time="6.261">
+<system-out><![CDATA[Given User entered the given details........................................passed
+When User click on the Register button......................................passed
+Then User should be successfully Registered.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Valid and Invalid Login Scenario" name="Login Scenario" time="17.271">
+<system-out><![CDATA[Given User entered this url "https://bookcart.azurewebsites.net/login" in browser.passed
+When User enter valid and Invalid "LithikaDevi" and "Lithi123"..............passed
+When User click on the Login button.........................................passed
+Then User shoulbe navigated to Bookcart Website.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Valid and Invalid Login Scenario" name="Login Scenario 2" time="13.855">
+<system-out><![CDATA[Given User entered this url "https://bookcart.azurewebsites.net/login" in browser.passed
+When User enter valid and Invalid "LithikaDevi" and "Lithi".................passed
+When User click on the Login button.........................................passed
+Then User shoulbe navigated to Bookcart Website.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Valid and Invalid Login Scenario" name="Login Scenario 3" time="17.971">
+<system-out><![CDATA[Given User entered this url "https://bookcart.azurewebsites.net/login" in browser.passed
+When User enter valid and Invalid "Lithika" and "Lithi123"..................passed
+When User click on the Login button.........................................passed
+Then User shoulbe navigated to Bookcart Website.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Valid and Invalid Login Scenario" name="Login Scenario 4" time="14.994">
+<system-out><![CDATA[Given User entered this url "https://bookcart.azurewebsites.net/login" in browser.passed
+When User enter valid and Invalid "Lithika" and "Lithi".....................passed
+When User click on the Login button.........................................passed
+Then User shoulbe navigated to Bookcart Website.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookCart Application Add To Cart for particular searched product" name="Add To Cart Using Search" time="26.738">
+<system-out><![CDATA[Given User entered url "https://bookcart.azurewebsites.net/login" in browser.passed
+When User enter valid "LithikaDevi" and "Lithi123"..........................passed
+And User click on the login button and navigate into Bookcart site..........passed
+When User search for a "HP1"................................................passed
+And User get that product and click on AddToCart............................passed
+Then The cart badge should be get updated...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookCart Application Add To Cart for particular searched product" name="Add To Cart Using select categories" time="12.2">
+<system-out><![CDATA[Given User select particular categories of books............................passed
+When User scroll down for that particular book..............................passed
+And User click on AddToCart button..........................................passed
+And User search for a "Robbie"..............................................passed
+And User click on AddToCart button..........................................passed
+Then Again cart badge shouldbe incresed from that value.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookCart Application Add To Cart for particular searched product" name="Delete some item from Cart" time="10.54">
+<system-out><![CDATA[Given User click on the shopping cart icon..................................passed
+When User remove some item from cart........................................passed
+And Click on the checkout button............................................passed
+When User enter the Shipping Address Details................................passed
+Then User click on the place order button...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookCart Application Add To Cart for particular searched product" name="Get My Order Details" time="10.481">
+<system-out><![CDATA[Given User if check it is myorder page......................................passed
+When User get MyOrder details from Table....................................passed
+Then User logout from the BookCart..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
