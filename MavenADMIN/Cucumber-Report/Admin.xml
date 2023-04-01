@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="998.043">
+<testcase classname="Login Scenario" name="Login credentials passed valid and invalid data" time="28.149">
+<system-out><![CDATA[Given User go to the Login url "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+When User enter username  "Admin" and password "admin123"...................passed
+And User click on the login button..........................................passed
+Then User should be login and navigated to dashboard page...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Scenario" name="Login credentials passed valid and invalid data 2" time="28.736">
+<system-out><![CDATA[Given User go to the Login url "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+When User enter username  "Admin" and password "admin"......................passed
+And User click on the login button..........................................passed
+Then User should be login and navigated to dashboard page...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Scenario" name="Login credentials passed valid and invalid data 3" time="55.129">
+<system-out><![CDATA[Given User go to the Login url "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+When User enter username  "Admin1" and password "admin123"..................passed
+And User click on the login button..........................................passed
+Then User should be login and navigated to dashboard page...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Scenario" name="Login credentials passed valid and invalid data 4" time="24.963">
+<system-out><![CDATA[Given User go to the Login url "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+When User enter username  "Admin1" and password "admin".....................passed
+And User click on the login button..........................................passed
+Then User should be login and navigated to dashboard page...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Valid User and Product Information Management details" name="Login Orange Admin Panel" time="37.99">
+<system-out><![CDATA[Given User Open the Admin Url "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+When User enter the valid username as "Admin" and Password as "admin123"....passed
+And user click on the login.................................................passed
+Then User should be navigated to dashboard page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Valid User and Product Information Management details" name="User select on PIM and Edit Employee details from PIM" time="16.496">
+<system-out><![CDATA[Given User select on the PIM from List......................................passed
+And then user view employee details.........................................passed
+When User search particular EmployeeName as "Charlie" and id as "0212"......passed
+And User click on the search button.........................................passed
+Then click on delete button it deleted the employee.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Valid User and Product Information Management details" name="Add New Employee from PIM" time="14.246">
+<system-out><![CDATA[Given User click on AddEmployee buttton.....................................passed
+And It navigated to Add employee list page..................................passed
+When user enterd details Employee name as "Vidya" and "s"...................passed
+Then click on the save button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Valid User and Product Information Management details" name="Add New Employee from PIM 2" time="788.511">
+<failure message="Cannot locate an element using xpath=//*[@id=&quot;app&quot;]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-Q9I17PC', ip: '192.168.246.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User click on AddEmployee buttton.....................................failed
+And It navigated to Add employee list page..................................skipped
+When user enterd details Employee name as "Rooby" and "t"...................skipped
+Then click on the save button...............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q9I17PC', ip: '192.168.246.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at org.stepdefinitions.PIMAdmin.user_click_on_add_employee_buttton(PIMAdmin.java:90)
+	at ✽.User click on AddEmployee buttton(file:///C:/Users/splpt777/Desktop/Javaprogram/MavenADMIN/Features/02PIM.feature:19)
+]]></failure>
+</testcase>
+<testcase classname="Login Valid User and Product Information Management details" name="Add New Employee from PIM 3" time="1.54">
+<failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=111.0.5563.147)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-Q9I17PC', ip: '192.168.246.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\splpt777\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8c53a1e528198594754681962989ce6e&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given User click on AddEmployee buttton.....................................failed
+And It navigated to Add employee list page..................................skipped
+When user enterd details Employee name as "raja" and "r"....................skipped
+Then click on the save button...............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q9I17PC', ip: '192.168.246.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\splpt777\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c53a1e528198594754681962989ce6e
+*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at org.stepdefinitions.PIMAdmin.user_click_on_add_employee_buttton(PIMAdmin.java:90)
+	at ✽.User click on AddEmployee buttton(file:///C:/Users/splpt777/Desktop/Javaprogram/MavenADMIN/Features/02PIM.feature:19)
+]]></failure>
+</testcase>
+<testcase classname="Login Valid User and Product Information Management details" name="Apply Leave" time="1.52">
+<failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=111.0.5563.147)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-Q9I17PC', ip: '192.168.246.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\splpt777\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8c53a1e528198594754681962989ce6e&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div[1]/div[1]/aside/nav/div[2]/ul/li[3]/a}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given User Click on Leave from List.........................................failed
+And user click on dashboard.................................................skipped
+When user click on profile..................................................skipped
+Then click on logout button.................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q9I17PC', ip: '192.168.246.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\splpt777\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c53a1e528198594754681962989ce6e
+*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[3]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at org.stepdefinitions.PIMAdmin.user_click_on_leave_from_list(PIMAdmin.java:123)
+	at ✽.User Click on Leave from List(file:///C:/Users/splpt777/Desktop/Javaprogram/MavenADMIN/Features/02PIM.feature:33)
+]]></failure>
+</testcase>
+</testsuite>
