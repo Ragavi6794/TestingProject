@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="81.785">
+<testcase classname="Book Bus Ticket from IRCTC with valid user" name="User Enter valid username and password for Login" time="27.72">
+<system-out><![CDATA[Given User open the link "https://www.bus.irctc.co.in/home".................passed
+When Click on the login button..............................................passed
+And User enter valid username "RagaviEswaran" and password as "Ragavi@6794".passed
+Then click on login button user should be login successfully................passed
+]]></system-out>
+</testcase>
+<testcase classname="Book Bus Ticket from IRCTC with valid user" name="Book Bus Ticket" time="53.397">
+<failure message="Cannot locate an element using xpath=//*[@id=&quot;seatLayout2&quot;]/div/div/div[2]/div[2]/div[4]/button&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-Q9I17PC', ip: '192.168.46.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Click on the Depart From as "Coimbatore" Going To as "Tirupathi"......passed
+When User select on the departure date and click search button..............passed
+And User click on select seat button........................................passed
+And Select particular seats.................................................passed
+When User click on Proceed to Book button...................................failed
+And User enter details for confirm booking..................................skipped
+Then User click on Continue booking button and click payment................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id="seatLayout2"]/div/div/div[2]/div[2]/div[4]/button
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q9I17PC', ip: '192.168.46.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at org.stepdefinitions.BusTicketBooking.user_click_on_proceed_to_book_button(BusTicketBooking.java:83)
+	at ✽.User click on Proceed to Book button(file:///C:/Users/splpt777/Desktop/Javaprogram/MavenIRCTC/Features/01IRCTCBUSBOOKING.feature:14)
+]]></failure>
+</testcase>
+</testsuite>
